@@ -1,7 +1,10 @@
 /*===========
  Font Imports
 ===========*/
+/* Roboto: Medium(500), Bold(700), Black(900) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+/* Open Sans: Light(300), Regular(400), Semi-Bold(600) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 /*=============
@@ -27,9 +30,7 @@ html {
     --ff-primary: "Roboto", sans-serif;
     --ff-secondary: "Open Sans", serif; 
 
-    color: var(--clr-bg-secondary);
-    font-family: var(--ff-primary);
-    font-family: var(--ff-secondary);
+    color: var(--clr-txt-secondary);
 }
 
 *,
@@ -38,18 +39,74 @@ html {
     box-sizing: border-box;
 }
 
+/* Extra small devices (phones, 250px and up) */
+@media only screen and (min-width: 250px) {
+    :root {
+        font-size: 0.3em;
+    }
+}
+
+/* Extra small devices (phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    :root {
+        font-size: 0.4em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 0.5em;
+    }
+}
+
+/* Medium devices (landscape tablets, 992px and up) */
+@media only screen and (min-width: 992px) {
+    :root {
+        font-size: 0.6em;
+    }
+}
+
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    :root {
+        font-size: 0.7em;
+    }
+}
+
+/* Large devices (laptops/desktops, 1300px and up) */
+@media only screen and (min-width: 1300px) {
+    :root {
+        font-size: 0.8em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+    :root {
+        font-size: 0.9em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (min-width: 1500px) {
+    :root {
+        font-size: 1em;
+    }
+}
+
 /*---
  Tags
 ---*/
 body {
     font-family: var(--ff-primary);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.3125rem;
+    line-height: 1.6;
 
     background-color: var(--clr-bg-primary);
 }
 
-body,
 h1,
 h2,
 h3,
@@ -57,13 +114,9 @@ p {
     margin: 0;
 }
 
-main {
-    width: min(90%, 100rem);
-    margin: auto;
-}
-
 a {
-    margin: 2rem;
+    margin: 0.5rem;
+    margin-inline: 1.1rem;
     padding-block: 0.3em;
     text-decoration: none;
 }
@@ -78,13 +131,13 @@ hr {
 
 button {
     cursor: pointer;
-    margin: 1rem;
-    padding: 0.3em;
+    padding: 0.5em;
     font-size: 1.3rem;
     height: fit-content;
-    border-radius: 0.3rem;
-    background-color: var(--background_color);
-    border: 2px solid var(--primary_color);
+    border-radius: 0.7rem;
+    color: var(--clr-txt-secondary);
+    background-color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
     box-shadow: 0 3px 7px rgb(0 0 0 / 20%);
 
     transition: all 230ms ease-in-out;
@@ -108,14 +161,27 @@ img {
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
 }
 
+.primary-color-text {
+    color: var(--clr-primary)!important;
+}
+
+.big-heading-1 {
+    font-size: 5rem;
+}
+
+.big-heading-2 {
+    line-height: 0.75;
+    font-size: 9rem;
+}
+
 .heading {
-    font-size: 3.7rem;
+    font-size: 3.3rem;
     font-family: var(--ff-primary);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .sub-heading {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-family: var(--ff-secondary);
     font-weight: 300;
     margin-top: 1rem;
@@ -139,6 +205,11 @@ img {
     margin: 0.5rem;
 }
 
+.container-span-width {
+    width: min(70%, 100rem);
+    margin: auto!important;
+}
+
 .container-flex-row {
     display: flex;
     flex-direction: row;
@@ -150,7 +221,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-around;
+    align-items: flex-start;
 }
 
 .container-grid {
@@ -169,60 +240,14 @@ img {
     -webkit-text-fill-color: transparent;
 }
 
-/*-------------------------------
- Custom Animation/Effects Classes
--------------------------------*/
-.gradient-border {
-    --border-width: 0.2rem;
-    box-shadow: 0 3px 7px rgb(0 0 0 / 20%);
-    position: relative;
-}
-  
-.gradient-border::after {
-      position: absolute;
-      content: "";
-      top: calc(-1 * var(--border-width));
-      left: calc(-1 * var(--border-width));
-      z-index: -1;
-      width: calc(100% + var(--border-width) * 2);
-      height: calc(100% + var(--border-width) * 2);
-      background: linear-gradient(
-        60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-        hsl(89, 85%, 66%),
-        hsl(134, 85%, 66%),
-        hsl(179, 85%, 66%)
-      );
-      background-size: 300% 300%;
-      background-position: 0 50%;
-      border-radius: calc(2 * var(--border-width));
-      animation: moveGradient 4s alternate infinite;
+.primary-btn {
+    color: var(--clr-txt-secondary);
+    background: var(--clr-primary);
+    border-color: var(--clr-primary);
 }
 
-.gradient-border:hover::after {
-    background: linear-gradient(
-        60deg,
-        hsl(224, 85%, 66%),
-        hsl(269, 85%, 66%),
-        hsl(314, 85%, 66%),
-        hsl(359, 85%, 66%),
-        hsl(44, 85%, 66%),
-        hsl(89, 85%, 66%),
-        hsl(134, 85%, 66%),
-        hsl(179, 85%, 66%)
-      );
-      background-size: 300% 300%;
-      background-position: 0 50%;
-      border-radius: calc(2 * var(--border-width));
-      animation: moveGradient 4s alternate infinite;
-}
-  
-@keyframes moveGradient {
-    50% {
-      background-position: 100% 50%;
-    }
+.secondary-btn {
+    color: var(--clr-txt-secondary);
+    background: var(--clr-bg-secondary);
+    border-color: var(--clr-bg-secondary);
 }

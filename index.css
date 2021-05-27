@@ -1,0 +1,53 @@
+/*================
+Tag Line Container
+================*/
+.tag-line-wrapping-container {
+    background: linear-gradient(101.77deg, var(--clr-bg-primary) 37%, var(--clr-primary)90.9%);
+    background-blend-mode: screen;
+
+    margin-inline: 0;
+}
+
+.tag-line-container {
+    justify-content: space-between; 
+}
+
+.tag-line-container .tag-line {
+    margin-block: 4rem;
+    width: 50%;
+}
+
+.tag-line-container .tag-line .btn-container {
+    margin: 0;
+    margin-block: 1rem;
+    padding-inline: 0;
+    align-items: flex-start;
+}
+
+.tag-line-container .tag-line .btn-container button {
+    margin-right: 1.3rem;
+}
+
+.tag-line-container .image-container {
+    width: 50%;
+}
+
+.tag-line-container .image-container img {
+    border-radius: 0.7rem;
+    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.25);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px - 768px) */
+@media only screen and (max-width: 768px) {}
+
+/* Medium devices (landscape tablets, 768px - 992px) */
+@media only screen and (max-width: 992px) {}
+
+/* Large devices (laptops/desktops, 992px - 1200px) */
+@media only screen and (max-width: 1200px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
