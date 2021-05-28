@@ -11,7 +11,7 @@
  Default Styles
 =============*/
 :root {
-    font-size: 1em;
+    font-size: 1.125em;
 }
 
 html {
@@ -28,7 +28,14 @@ html {
     --clr-txt-secondary: #E9E3E7;
 
     --ff-primary: "Roboto", sans-serif;
+    --ff-primary-medium: 500;
+    --ff-primary-bold: 700;
+    --ff-primary-black: 900;
+
     --ff-secondary: "Open Sans", serif; 
+    --ff-secondary-light: 300;
+    --ff-secondary-regular: 400;
+    --ff-secondary-semi-bold: 600;
 
     color: var(--clr-txt-secondary);
 }
@@ -42,54 +49,60 @@ html {
 /* Extra small devices (phones, 250px and up) */
 @media only screen and (min-width: 250px) {
     :root {
-        font-size: 0.3em;
+        font-size: 0.5em;
     }
 }
 
-/* Extra small devices (phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* Small devices (phones, 360px and up) */
+@media only screen and (min-width: 360px) {
     :root {
-        font-size: 0.4em;
+        /* font-size: 0.59em; */
+        font-size: 0.8em;
     }
 }
 
-/* Small devices (portrait tablets and large phones, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     :root {
-        font-size: 0.5em;
+        /* font-size: 0.63em; */
+        font-size: 0.85em;
     }
 }
 
 /* Medium devices (landscape tablets, 992px and up) */
 @media only screen and (min-width: 992px) {
     :root {
-        font-size: 0.6em;
+        /* font-size: 0.71em; */
+        font-size: 0.95em;
     }
 }
 
 /* Large devices (laptops/desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     :root {
-        font-size: 0.7em;
+        /* font-size: 0.79em; */
+        font-size: 0.95em;
     }
 }
 
 /* Large devices (laptops/desktops, 1300px and up) */
 @media only screen and (min-width: 1300px) {
     :root {
-        font-size: 0.8em;
+        /* font-size: 0.85em; */
+        font-size: 1em;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1500px and up) */
 @media only screen and (min-width: 1500px) {
     :root {
-        font-size: 0.9em;
+        /* font-size: 0.95em; */
+        font-size: 1em;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1500px and up) */
-@media only screen and (min-width: 1500px) {
+/* Extra large devices (large laptops and desktops, 1900px and up) */
+@media only screen and (min-width: 1900px) {
     :root {
         font-size: 1em;
     }
@@ -100,7 +113,7 @@ html {
 ---*/
 body {
     font-family: var(--ff-primary);
-    font-weight: 700;
+    font-weight: var(--ff-primary-medium);
     font-size: 1.3125rem;
     line-height: 1.6;
 
@@ -131,12 +144,18 @@ hr {
 
 button {
     cursor: pointer;
-    padding: 0.5em;
-    font-size: 1.3rem;
     height: fit-content;
-    border-radius: 0.7rem;
+    padding: 0.35em;
+    
+    font-family: var(--ff-primary);
+    font-family: var(--ff-primary-medium);
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+    
     color: var(--clr-txt-secondary);
     background-color: var(--clr-primary);
+    
+    border-radius: 0.7rem;
     border: 2px solid var(--clr-primary);
     box-shadow: 0 3px 7px rgb(0 0 0 / 20%);
 
@@ -166,37 +185,46 @@ img {
 }
 
 .big-heading-1 {
+    font-family: var(--ff-primary);
+    font-weight: var(--ff-primary-bold);
     font-size: 5rem;
 }
 
 .big-heading-2 {
+    font-family: var(--ff-primary);
+    font-weight: var(--ff-primary-bold);
+    font-size: 8rem;
     line-height: 0.75;
-    font-size: 9rem;
 }
 
 .heading {
-    font-size: 3.3rem;
     font-family: var(--ff-primary);
-    font-weight: 500;
+    font-weight: var(--ff-primary-medium);
+    font-size: 3rem;
+    line-height: 1.2;
 }
 
 .sub-heading {
-    font-size: 1.3rem;
     font-family: var(--ff-secondary);
-    font-weight: 300;
+    font-weight: var(--ff-secondary-regular);
+    font-size: 1.3rem;
+    letter-spacing: 0.02rem;
     margin-top: 1rem;
 }
 
 .text-heading {
-    font-size: 1.7rem;
+    font-family: var(--ff-primary);
+    font-weight: var(--ff-primary-medium);
+    font-size: 1.5rem;
     letter-spacing: 0.1rem;
     margin: auto;
 }
 
 .text-sub-heading {
+    font-family: var(--ff-secondary);
+    font-weight: var(--ff-secondary-regular);
     font-size: 1rem;
     margin-block: 1.1rem;
-    text-align: center;
 }
 
 .container {
@@ -206,15 +234,15 @@ img {
 }
 
 .container-span-width {
-    width: min(70%, 100rem);
-    margin: auto!important;
+    width: min(75%, 100rem);
+    margin-inline: auto!important;
 }
 
 .container-flex-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .container-flex-column {
