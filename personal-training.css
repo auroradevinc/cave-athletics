@@ -1,0 +1,198 @@
+/*================
+Tag Line Container
+================*/
+.tag-line-wrapping-container {
+    background: linear-gradient(101.77deg, var(--clr-bg-primary) 37%, var(--clr-primary)90.9%);
+    background-blend-mode: screen;
+
+    margin-inline: 0;
+}
+
+.tag-line-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag-line-container .tag-line {
+    margin-block: 5rem;
+    width: 50%;
+}
+
+.tag-line-container .tag-line .big-heading-1 {
+    line-height: 1.15;
+}
+
+.tag-line-container .tag-line .btn-container {
+    margin: 0;
+    margin-block: 1rem;
+    padding-inline: 0;
+}
+
+.tag-line-container .tag-line .btn-container button {
+    margin-right: 1.3rem;
+}
+
+.tag-line-container .image-container {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    margin-inline: 0.3rem;
+}
+
+.tag-line-container .image-container img {
+    border-radius: 0.7rem;
+    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.25);
+}
+
+/*=============
+Motto Container
+=============*/
+.motto-wrapping-container {
+    background: linear-gradient(0deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
+    
+    margin-inline: 0;
+    margin-block: 0;
+}
+
+.motto-container .heading-container .sub-heading {
+    margin-top: 0;
+}
+
+.motto-container .motto {
+    width: 70%;
+    margin-inline: auto;
+    padding: 1.1em;
+}
+
+/*=======================
+Expert Guidance Container
+=======================*/
+.expert-guidance-wrapping-container {
+    background: linear-gradient(180deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
+    
+    margin-inline: 0;
+    margin-block: 0;
+}
+
+.expert-guidance-container {
+    margin-bottom: 0;
+}
+
+.expert-guidance-container .heading-container .sub-heading{
+    margin-top: 0;
+}
+
+.expert-guidance-container .main-image-container {
+    position: relative;
+    width: 95%;
+    margin-inline: auto;
+    padding: 0;
+}
+
+.expert-guidance-container .main-image-container img {
+    display: block;
+    object-fit: cover;
+
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 15px -7px var(--clr-primary);
+}
+
+.expert-guidance-container .main-image-container .heading-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    box-shadow: none;
+    border-radius: 0 0 0 0.7rem;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.expert-guidance-container .main-image-container .heading-container .heading {
+    border-left: 5px solid var(--clr-primary);
+    padding-inline: 0.3em;
+}
+
+.expert-guidance-container .main-image-container .heading-container .sub-heading {
+    padding-inline: 1em;
+}
+
+.expert-guidance-container .guidance .guide {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expert-guidance-container .guidance .guide .heading-container,
+.expert-guidance-container .guidance .guide .image-container {
+    width: 50%;
+}
+
+.expert-guidance-container .guidance .guide .heading-container {
+    padding: 1.5em;
+}
+
+.expert-guidance-container .guidance .guide .heading-container .text-heading {
+    border-left: 5px solid var(--clr-primary);
+    padding-inline: 0.3em;
+}
+
+.expert-guidance-container .guidance .guide .heading-container .text-sub-heading {
+    letter-spacing: 0.02rem;
+}
+
+.expert-guidance-container .guidance .guide .heading-container button {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+}
+
+.expert-guidance-container .guidance .guide.guide_1 .image-container img,
+.expert-guidance-container .guidance .guide.guide_3 .image-container img {
+    float: right;
+}
+
+
+.expert-guidance-container .guidance .guide.guide_2 .image-container img {
+    float: left;
+}
+
+.expert-guidance-container .guidance .guide .image-container img {
+    width: 500px;
+
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 15px -7px var(--clr-primary);
+}
+
+/*=================
+Questions Container
+=================*/
+.questions-wrapping-container {
+    background: linear-gradient(0deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
+    
+    margin-inline: 0;
+    margin-block: 0;
+}
+
+.questions-container {
+    margin-top: 0;
+    width: fit-content;
+}
+
+.questions-container .btn-container button {
+    width: 45%;
+    font-size: 1.3rem;
+    justify-content: space-between;
+}
+
+/*=====================
+Trainers Meet Container
+=====================*/
+.trainers-meet-wrapping-container {
+    background: linear-gradient(180deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
+    
+    margin-inline: 0;
+    margin-block: 0;
+}
+
+.trainers-meet-container .trainers {
+    justify-content: space-evenly;
+}

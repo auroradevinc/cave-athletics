@@ -120,6 +120,7 @@ body {
     background-color: var(--clr-bg-primary);
 }
 
+body,
 h1,
 h2,
 h3,
@@ -148,7 +149,7 @@ button {
     padding: 0.35em;
     
     font-family: var(--ff-primary);
-    font-family: var(--ff-primary-medium);
+    font-weight: var(--ff-primary-medium);
     font-size: 1.2rem;
     letter-spacing: 0.02rem;
     
@@ -173,11 +174,23 @@ img {
     max-height: 100%;
 }
 
+hr {
+    margin: 5rem auto;
+    width: 70%;
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, var(--clr-bg-primary), var(--clr-bg-secondary), var(--clr-bg-primary));
+}
+
 /*-------------
  Custom Classes
 -------------*/
 .text-shadow {
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
+}
+
+.text-center {
+    width: fit-content;
+    margin: auto;
 }
 
 .primary-color-text {
@@ -233,6 +246,22 @@ img {
     margin: 0.5rem;
 }
 
+.container-parent {
+    margin-block: 3rem;
+}
+
+.container-center {
+    width: fit-content;
+    margin: auto;
+}
+
+.container-clr-bg-secondary {
+    background-color: var(--clr-bg-secondary);
+    
+    border-radius: 0.7rem;
+    box-shadow: 3px 3px 15px -7px var(--clr-txt-secondary);
+}
+
 .container-span-width {
     width: min(75%, 100rem);
     margin-inline: auto!important;
@@ -263,7 +292,7 @@ img {
 }
 
 .primary_color_gradient_text {
-    background: linear-gradient(to left, var(--primary_color), var(--font-color));
+    background: linear-gradient(to left, var(--clr-primary), var(--clr-txt-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

@@ -89,20 +89,8 @@ Tag Line Container
 /*====================
 Service View Container
 ====================*/
-.service-view-container {
-    margin-block: 3rem;
-}
-
-.service-view-container .heading-container {
-    width: fit-content;
-    margin: auto;
-}
-
 .service-view-container .heading-container .sub-heading {
     margin-top: 0;
-
-    width: fit-content;
-    margin: auto;
 }
 
 .service-view-container .routine-container {
@@ -142,24 +130,12 @@ Results Promise Container
     margin-inline: 0;
 }
 
-.results-promise-container .heading-container {
-    width: fit-content;
-    margin: auto;
-
-    margin-block: 2rem;
-}
-
 .results-promise-container .heading-container .sub-heading {
     margin-top: 0;
-
-    width: fit-content;
-    margin: auto;
 }
 
 .results-promise-container .promise-container {
     justify-content: space-between;
-
-    margin-block: 2rem;
 }
 
 .results-promise-container .promise-container .promise {
@@ -175,9 +151,6 @@ Results Promise Container
 }
 
 .results-promise-container .promise-container .promise .text-sub-heading {
-    width: max-content;
-    margin: auto;
-
     font-size: 1.15rem;
 }
 
@@ -208,28 +181,16 @@ Results Promise Container
 /*==============
 Review Container
 ==============*/
-.review-container {
-    margin-block: 2rem;
-}
-
 .review-container .heading {
-    width: fit-content;
-    margin: auto;
-
     margin-block: 2rem;
 }
 
 .review-container .review {
     width: 70%;
-    margin: auto;
-
+    margin-inline: auto;
     margin-block: 3rem;
+    
     padding: 1.1em;
-    
-    background-color: var(--clr-bg-secondary);
-    
-    border-radius: 0.7rem;
-    box-shadow: 3px 3px 15px -7px var(--clr-txt-secondary);
 }
 
 .review-container .review .text-sub-heading:nth-child(1) {
@@ -252,19 +213,11 @@ Awards Recognition Container
     margin-block: 0;
 }
 
-.awards-recognition-container {
-    margin-block: 2rem;
-}
-
 .awards-recognition-container .heading {
-    width: fit-content;
-    margin: auto;
-
     margin-block: 2rem;
 }
 
 .awards-recognition-container .awards-container {
-    margin-block: 3rem;
     justify-content: space-between;
 }
 
@@ -352,10 +305,6 @@ Sign Up Container
     padding-block: 5em;
 }
 
-.sign-up-container .sign-up-text {
-    margin-block: 2rem;
-}
-
 .sign-up-container .sign-up-text .big-heading-1 {
     width: min(100%, 45rem);
     line-height: 1;
@@ -408,20 +357,11 @@ Sign Up Container
 /*==============
 Safety Container
 ==============*/
-.safety-container {
-    margin-block: 2rem;
-}
-
 .safety-container .heading {
-    width: fit-content;
-    margin: auto;
     margin-block: 2rem;
 }
 
 .safety-container .safety-measures {
-    margin-block: 3rem;
-    background-color: var(--clr-bg-secondary);
-    
-    border-radius: 0.7rem;
-    box-shadow: 3px 3px 15px -7px var(--clr-txt-secondary);
+    width: 100%;
+    margin: auto;
 }
