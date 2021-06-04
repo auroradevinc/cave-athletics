@@ -287,8 +287,8 @@ hr {
     justify-content: space-around;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto;
-    column-gap: 1rem;
-    row-gap: 1rem;
+    column-gap: 2.5rem;
+    row-gap: 3rem;
 }
 
 .primary_color_gradient_text {
