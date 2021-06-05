@@ -3,9 +3,15 @@ Gallery Container
 ===============*/
 .gallery-wrapping-container {
     
+    /* background: 
+        linear-gradient(90deg, var(--clr-primary) -11%, var(--clr-bg-primary) 40.33%),
+        linear-gradient(270deg, var(--clr-primary) -11%, var(--clr-bg-primary) 47.33%); */
+
+    /* background:
+        linear-gradient(270deg, var(--clr-primary), var(--clr-bg-primary), var(--clr-primary)); */
+    
     background: 
-    /* linear-gradient(90deg, var(--clr-primary) -11%, var(--clr-bg-primary) 40.33%), */
-    linear-gradient(270deg, var(--clr-primary) -11%, var(--clr-bg-primary) 47.33%);
+        linear-gradient(270deg, var(--clr-primary) -30%, var(--clr-bg-primary), var(--clr-primary) 130%);
 
     margin-inline: 0;
     margin-block: 0;

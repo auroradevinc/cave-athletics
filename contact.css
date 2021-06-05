@@ -1,0 +1,110 @@
+/*==================
+Contact Us Container
+==================*/
+.contact-us-wrapping-container {
+    background: linear-gradient(270deg, var(--clr-primary) -11%, var(--clr-bg-primary) 47.33%);
+}
+
+.contact-us-container .contact-container .contact-info-container,
+.contact-us-container .contact-container .contact-form-container {
+    width: 50%;
+}
+
+.contact-us-container .heading-container .sub-heading,
+.contact-us-container .contact-container .heading-container .text-sub-heading {
+    margin-top: 0;
+}
+
+/*--------------------
+Contact Info Container
+--------------------*/
+.contact-us-container .contact-container .contact-info-container {
+    position: relative;
+    overflow: hidden;
+
+    background: var(--clr-primary);
+    border-radius: 0.7rem;
+    box-shadow: 7px 7px 11px 3px rgb(255 255 255 / 17%);
+}
+
+.contact-us-container .contact-container .contact-info-container img {
+    position: absolute;
+    right: -290px;
+    bottom: -290px;
+
+    color: var(--clr-bg-primary);
+}
+
+.contact-us-container .contact-container .contact-info-container .heading-container .text-heading {
+    font-weight: var(--ff-primary-bold);
+    font-size: 2rem;
+
+    color: var(--clr-bg-secondary);
+}
+
+.contact-us-container .contact-container .contact-info-container hr {
+    width: 90%;
+    height: 2.1px;
+    background-image: none;
+    margin: 0rem 1rem;
+    background-color: var(--clr-txt-secondary);
+}
+
+.contact-us-container .contact-container .contact-info-container a {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.contact-us-container .contact-container .contact-info-container i {
+    color: var(--clr-bg-secondary);
+    margin-right: 1rem;
+}
+
+.contact-us-container .contact-container .contact-info-container .social-media-container {
+    justify-content: flex-start;
+}
+
+/*--------------------
+Contact Form Container
+--------------------*/
+.contact-us-container .contact-container .contact-form-container .container {
+    padding: 0;
+    margin: 1rem;
+}
+
+.contact-us-container .contact-container .contact-form-container .form-field label.text-sub-heading {
+    font-size: 1.1rem;
+    display: block;
+    margin-block: 0;
+}
+
+.contact-us-container .contact-container .contact-form-container .form-field input.text-sub-heading,
+.contact-us-container .contact-container .contact-form-container .form-field textarea.text-sub-heading {
+    margin-top: 0.3rem;
+}
+
+.contact-us-container .contact-container .contact-form-container .form-field {
+    margin-right: 3rem;
+}
+
+.contact-us-container .contact-container .contact-form-container .form-field input, 
+.contact-us-container .contact-container .contact-form-container .form-field textarea {
+    border-radius: 0.7rem;
+    border: none;
+    color: var(--clr-txt-secondary);
+    background: var(--clr-bg-secondary);
+
+    resize: none;
+
+    margin-block: 0.3rem;
+    padding: 0.5em;
+    padding-inline: 1em;
+}
+
+.contact-us-container .contact-container .contact-form-container button {
+    margin-inline: 1rem;
+    padding: 0.3em;
+    font-size: 1.1rem;
+
+    box-shadow: 7px 7px 11px 3px rgb(0 0 0 / 17%);
+}
