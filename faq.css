@@ -1,0 +1,54 @@
+/*==================
+Contact Us Container
+==================*/
+.faq-container .heading-container .text-sub-heading {
+    margin-top: 0;
+}
+
+.faq-container .questions-container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.faq-container .questions-container .heading-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.faq-container .questions-container .heading-container .text-heading {
+    margin-inline: 0.5rem;
+    font-size: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.faq-container .questions-container .question-container .question .text-heading {
+    color: var(--clr-primary);
+}
+
+.faq-container .questions-container .question-container .question,
+.faq-container .questions-container .question-container .answer,
+.faq-container .questions-container .question-container .answer .text-sub-heading {
+    margin-block: 0;
+}
+
+.faq-container .questions-container .question-container .question {
+    margin-left: 0;
+    padding-left: 0.5rem;
+}
+
+.faq-container .questions-container .question-container .answer {
+    border-left: 0.5rem solid var(--clr-primary);
+}
+
+.faq-container .questions-container .question-container .answer .text-sub-heading a{
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    color: var(--clr-primary);
+}
+
+.faq-container .questions-container button.primary-btn {
+    margin-inline: auto;
+    margin-block: 1rem;
+    display: block;
+}

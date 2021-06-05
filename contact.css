@@ -70,6 +70,7 @@ Contact Form Container
 .contact-us-container .contact-container .contact-form-container .container {
     padding: 0;
     margin: 1rem;
+    margin-block: 0.8rem;
 }
 
 .contact-us-container .contact-container .contact-form-container .form-field label.text-sub-heading {
