@@ -40,15 +40,9 @@ Tag Line Container
     box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.25);
 }
 
-@media only screen and (max-width: 768px) {
-    .tag-line-container .image-container {
-        width: 80%!important;
-    }
-}
-
 @media only screen and (max-width: 1200px) {
     .tag-line-wrapping-container {
-        background: linear-gradient(101.77deg, var(--clr-bg-primary) 15%, var(--clr-primary)70.9%);
+        background: linear-gradient(101.77deg, var(--clr-bg-primary) 30%, var(--clr-primary)95.9%);
     }
 
     .tag-line-container {
@@ -57,7 +51,7 @@ Tag Line Container
 
     .tag-line-container .tag-line,
     .tag-line-container .image-container {
-        width: 70%;
+        width: 75%;
         justify-content: flex-start;
     }
 
@@ -83,6 +77,16 @@ Tag Line Container
 
     .tag-line-container .tag-line .big-heading-2 {
         font-size: 6.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {   
+    .tag-line-wrapping-container {
+        background: linear-gradient(101.77deg, var(--clr-bg-primary) 30%, var(--clr-primary)100.9%);
+    }
+    
+    .tag-line-container .image-container {
+        width: 90%;
     }
 }
 
@@ -119,6 +123,12 @@ Service View Container
 
     .service-view-container .routine-container .routine {
         width: 35%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .service-view-container .routine-container .routine {
+        width: 45%;
     }
 }
 
@@ -178,6 +188,26 @@ Results Promise Container
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .results-promise-container .promise-container .promise img {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .results-promise-container .promise-container .promise {
+        width: 40%
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .results-promise-container .promise-container .promise img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 /*==============
 Review Container
 ==============*/
@@ -203,6 +233,12 @@ Review Container
 
 .review-container .review .text-sub-heading.ratings-source {
     margin-block: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .review-container .review {
+        width: 90%;
+    }
 }
 
 /*==========================
@@ -261,6 +297,12 @@ Awards Recognition Container
     color: gold;
 }
 
+@media only screen and (min-width: 1900px) {
+    .awards-recognition-container .awards-container .award img{
+        margin-top: 1rem;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     .awards-recognition-container .awards-container {
         flex-direction: column;
@@ -289,9 +331,36 @@ Awards Recognition Container
     }
 }
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (max-width: 768px) {
+    .awards-recognition-container .heading.text-center {
+        width: min-content;
+    }
+
+    .awards-recognition-container .awards-container {
+        margin-top: 0;
+    }
+
+    .awards-recognition-container .awards-container .award {
+        flex-direction: column;
+    }
+
     .awards-recognition-container .awards-container .award img{
-        margin-top: 1rem;
+        margin-inline: auto;
+        margin-block: 1rem;
+
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .awards-recognition-container .awards-container .award img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .awards-recognition-container .awards-container .award .award-description .star-ratings .text-sub-heading {
+        margin-right: 0.5rem;
     }
 }
 
@@ -364,4 +433,16 @@ Safety Container
 .safety-container .safety-measures {
     width: 100%;
     margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .safety-container .safety-measures ul {
+        padding-inline: 2em;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .safety-container .safety-measures ul {
+        padding-inline: 1em;
+    }
 }

@@ -14,14 +14,14 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar-container container container-flex-row container-span-width">
-        <div class="logo-image">
+    <nav id="navbar" class="navbar-container container container-flex-row container-span-width">
+        <div class="logo-image-container">
             <img src="./assets/images/logo/white_logo.png" alt="Cave Athletics Logo White">
         </div>
   
         <div class="page-links-container container container-flex-row">
           <a href="/" class="active-link">Home</a>
-          <a href="/" class="inactive-link">Plans</a>
+          <a href="/plans.html" class="inactive-link">Plans</a>
           <a href="/personal-training.html" class="inactive-link">Personal Training</a>
           <a href="/boxing.html" class="inactive-link">Boxing</a>
           <a href="/gallery.html" class="inactive-link">Gallery</a>
@@ -29,15 +29,27 @@
           <a href="/faq.html" class="inactive-link">FAQs</a>
         </div>
 
-        <!-- <div class="social-media-container container container-flex-row">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
-        </div> -->
+        <div class="btn-container container">
+            <button class="primary-btn">
+                <a href="./plans.html" target="_blank">Sign Up</a>
+            </button>
+        </div>
+
+        <div id="expand-nav-btn" class="side-nav-open-btn-container container">
+            <button onclick="expand_side_nav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+        </div>
+
+        <div id="collapse-nav-btn" class="side-nav-close-btn-container container">
+            <button onclick="collapse_side_nav()">
+                <i class="fas fa-times fa-2x"></i>
+            </button>
+        </div>
   </nav>
 
     <!-- Main -->
     <main>
-
         <div class="tag-line-wrapping-container container">
             <div class="tag-line-container container container-parent container-flex-row container-span-width">
                 <div class="tag-line container container-flex-column">
@@ -147,7 +159,7 @@
 
         <div class="awards-recognition-wrapping-container container">
             <div class="awards-recognition-container container container-parent container-span-width">
-                <p class="heading text-center primary-color-text">Awards and Recognition</p>
+                <p class="heading text-center primary-color-text">Awards & Recognition</p>
     
                 <div class="awards-container container container-parent container-flex-row">
                     <div class="award container container-flex-row">
@@ -232,13 +244,51 @@
                 </ul>
             </div>
         </div>
-
     </main>
 
     <!-- Footer -->
     <footer></footer>
 
     <!-- Script -->
-    <Script></Script>
+    <Script>
+
+        // Side Nav Controller
+        let expand_side_nav = () => {
+
+            let navbar = document.getElementById("navbar");
+            let expand_btn = document.getElementById("expand-nav-btn");
+            let collapse_btn = document.getElementById("collapse-nav-btn");
+            
+            let main_tag = document.getElementsByTagName("main")[0];
+            let footer_tag = document.getElementsByTagName("footer")[0];
+
+            navbar.classList.add("navbar-expanded-container");
+            navbar.classList.remove("navbar-container");
+            expand_btn.classList.add("hide");
+            collapse_btn.classList.add("show");
+
+            main_tag.classList.add("hide");
+            footer_tag.classList.add("hide");
+        }
+
+        // Side Nav Controller
+        let collapse_side_nav = () => {
+
+            let navbar = document.getElementById("navbar");
+            let expand_btn = document.getElementById("expand-nav-btn");
+            let collapse_btn = document.getElementById("collapse-nav-btn");
+
+            let main_tag = document.getElementsByTagName("main")[0];
+            let footer_tag = document.getElementsByTagName("footer")[0];
+
+            navbar.classList.remove("navbar-expanded-container");
+            navbar.classList.add("navbar-container");
+            expand_btn.classList.remove("hide");
+            collapse_btn.classList.remove("show");
+
+            main_tag.classList.remove("hide");
+            footer_tag.classList.remove("hide");
+        }
+    </Script>
 </body>
 </html>
