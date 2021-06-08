@@ -56,8 +56,8 @@ Tag Line Container
     }
 
     .tag-line-container .tag-line {
-        width: 90%;
-        height: 70%;
+        /* width: 90%;
+        height: 70%; */
         margin-block: 1rem;
     }
 
@@ -85,7 +85,8 @@ Tag Line Container
         background: linear-gradient(101.77deg, var(--clr-bg-primary) 30%, var(--clr-primary)100.9%);
     }
     
-    .tag-line-container .image-container {
+    .tag-line-container .image-container,
+    .tag-line-container .tag-line {
         width: 90%;
     }
 }

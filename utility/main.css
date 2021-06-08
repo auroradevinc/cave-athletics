@@ -49,7 +49,7 @@ html {
 /* Extra small devices (phones, 250px and up) */
 @media only screen and (min-width: 250px) {
     :root {
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 }
 
@@ -172,6 +172,12 @@ button:hover {
     box-shadow: 0 5px 11px rgb(0 0 0 / 30%);
 }
 
+@media only screen and (max-width: 400px) {
+    button {
+        font-size: 1rem;
+    }
+}
+
 img {
     width: 100%;
     max-width: 100%;
@@ -189,11 +195,20 @@ hr {
 /*-------------
  Custom Classes
 -------------*/
+.show {
+    display: block!important;
+}
+
+.hide {
+    display: none!important;
+}
+
 .text-shadow {
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
 }
 
 .text-center {
+    text-align: center;
     width: fit-content;
     margin: auto;
 }
@@ -255,6 +270,12 @@ hr {
     margin-block: 3rem;
 }
 
+@media only screen and (max-width: 768px) {
+    .container-parent {
+        margin-block: 1.5rem;
+    }
+}
+
 .container-center {
     width: fit-content;
     margin: auto;
@@ -270,6 +291,18 @@ hr {
 .container-span-width {
     width: min(75%, 100rem);
     margin-inline: auto!important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container-span-width {
+        width: min(85%, 100rem);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container-span-width {
+        width: min(95%, 100rem);
+    }
 }
 
 .container-flex-row {

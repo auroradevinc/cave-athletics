@@ -14,14 +14,14 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar-container container container-parent container-flex-row container-span-width">
-        <div class="logo-image">
+    <nav id="navbar" class="navbar-container container container-flex-row container-span-width">
+        <div class="logo-image-container">
             <img src="./assets/images/logo/white_logo.png" alt="Cave Athletics Logo White">
         </div>
   
         <div class="page-links-container container container-flex-row">
           <a href="/" class="active-link">Home</a>
-          <a href="/" class="inactive-link">Plans</a>
+          <a href="/plans.html" class="inactive-link">Plans</a>
           <a href="/personal-training.html" class="inactive-link">Personal Training</a>
           <a href="/boxing.html" class="inactive-link">Boxing</a>
           <a href="/gallery.html" class="inactive-link">Gallery</a>
@@ -29,15 +29,27 @@
           <a href="/faq.html" class="inactive-link">FAQs</a>
         </div>
 
-        <!-- <div class="social-media-container container container-flex-row">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram-square"></i>
-        </div> -->
+        <div class="btn-container container">
+            <button class="primary-btn">
+                <a href="./plans.html" target="_blank">Sign Up</a>
+            </button>
+        </div>
+
+        <div id="expand-nav-btn" class="side-nav-open-btn-container container">
+            <button onclick="expand_side_nav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+        </div>
+
+        <div id="collapse-nav-btn" class="side-nav-close-btn-container container">
+            <button onclick="collapse_side_nav()">
+                <i class="fas fa-times fa-2x"></i>
+            </button>
+        </div>
   </nav>
 
-   <!-- Main -->
-   <main>
-
+    <!-- Main -->
+    <main>
         <div class="tag-line-wrapping-container container">
             <div class="tag-line-container container container-parent container-flex-row container-span-width">
                 <div class="tag-line container container container-flex-column">
@@ -70,7 +82,7 @@
                         Some major components that play a vital role in your fitness today:
                     </p>
                     <ul>
-                        <li class="text-sub-heading"> Mental health</li> 
+                        <li class="text-sub-heading">Mental health</li> 
                         <li class="text-sub-heading">Physical aptitude</li>
                         <li class="text-sub-heading">A healthy diet</li> 
                         <li class="text-sub-heading">Accessibility to a fitness coach/facility</li>
@@ -94,8 +106,8 @@
                 <div class="main-image-container container container-parent">
                     <img src="./assets/images/umatched-progress.jpg" alt="Squats with Personal Trainer Image">
                     <div class="heading-container container container-center container-clr-bg-secondary">
-                        <p class="heading">Get <span class="primary-color-text">Toned</span> </p>
-                        <p class="sub-heading">
+                        <p class="text-heading">Get <span class="primary-color-text">Toned</span> </p>
+                        <p class="text-sub-heading">
                             Our team of professional and skilled trainers have helped many in achieving their body goals.  
                         </p>
                     </div>
@@ -107,8 +119,7 @@
                             <p class="text-heading primary-color-text">Custom Programs</p>
                             <p class="text-sub-heading">
                                 Programs tailored specific to each clients’ needs. Varied physical aptitudes help to form the necessary base for each unique program and the tracking of that program thereafter.
-                            </p>
-                            <p class="text-sub-heading">
+                                <br><br> 
                                 Regular consultation is provided according to the changing needs of the client.
                             </p>
                             <button class="secondary-btn">Sign Up Today</button>
@@ -128,8 +139,7 @@
                             <p class="text-heading primary-color-text">Unmatched Progress</p>
                             <p class="text-sub-heading">
                                 The coaches at Cave Athletics are very passionate about progress, therefore, they are persistent about using methods that enable their clients to become efficient and healthy. 
-                            </p>
-                            <p class="text-sub-heading">
+                                <br><br>
                                 Revolutionary fitness regimes such as functional training, bodybuilding, HIIT training, physical aptitude test training are just some of techniques practiced in Cave Athletics! We believe in optimising each individuals performance.
                             </p>
                             <button class="secondary-btn">Sign Up Today</button>
@@ -143,8 +153,7 @@
                             <p class="text-heading primary-color-text">Rehabilitation</p>
                             <p class="text-sub-heading">
                                 Active Rehabilitation is provided by certified kinesiologists on site. At Cave Athletics we ensure every client has their needs met through varied services available at our facility.
-                            </p>
-                            <p class="text-sub-heading">
+                                <br><br>
                                 Our approach is progressive and dynamic which is a perfect fit for the current health/fitness industry and for all lifestyles of today.
                             </p>
                             <button class="secondary-btn">Sign Up Today</button>
@@ -194,8 +203,7 @@
                 </div>
             </div>
         </div>
-
-   </main>
+    </main>
 
    <!-- Footer -->
    <footer></footer>

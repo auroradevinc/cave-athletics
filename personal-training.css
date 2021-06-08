@@ -44,6 +44,57 @@ Tag Line Container
     box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.25);
 }
 
+@media only screen and (max-width: 1200px) {
+    .tag-line-wrapping-container {
+        background: linear-gradient(101.77deg, var(--clr-bg-primary) 30%, var(--clr-primary)95.9%);
+    }
+
+    .tag-line-container {
+        flex-direction: column;
+    }
+
+    .tag-line-container .tag-line,
+    .tag-line-container .image-container {
+        width: 75%;
+        justify-content: flex-start;
+    }
+
+    .tag-line-container .tag-line {
+        /* width: 90%;
+        height: 70%; */
+        margin-block: 1rem;
+    }
+
+    .tag-line-container .image-container {
+        height: 30%;
+    }
+
+    .tag-line-container .tag-line .big-heading-1,
+    .tag-line-container .tag-line .big-heading-2 {
+        width: fit-content;
+        display: inline-block;
+    }
+
+    .tag-line-container .tag-line .big-heading-1 {
+        font-size: 3.9rem;
+    }
+
+    .tag-line-container .tag-line .big-heading-2 {
+        font-size: 6.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {   
+    .tag-line-wrapping-container {
+        background: linear-gradient(101.77deg, var(--clr-bg-primary) 30%, var(--clr-primary)100.9%);
+    }
+    
+    .tag-line-container .image-container,
+    .tag-line-container .tag-line {
+        width: 90%;
+    }
+}
+
 /*=============
 Motto Container
 =============*/
@@ -64,6 +115,12 @@ Motto Container
     padding: 1.1em;
 }
 
+@media only screen and (max-width: 768px) {   
+    .motto-container .motto {
+        width: 90%;
+    }
+}
+
 /*=======================
 Expert Guidance Container
 =======================*/
@@ -78,13 +135,13 @@ Expert Guidance Container
     margin-bottom: 0;
 }
 
-.expert-guidance-container .heading-container .sub-heading{
+.expert-guidance-container .heading-container .text-sub-heading{
     margin-top: 0;
 }
 
 .expert-guidance-container .main-image-container {
     position: relative;
-    width: 95%;
+    width: 90%;
     margin-inline: auto;
     padding: 0;
 }
@@ -132,12 +189,14 @@ Expert Guidance Container
 }
 
 .expert-guidance-container .guidance .guide .heading-container .text-heading {
-    border-left: 5px solid var(--clr-primary);
-    padding-inline: 0.3em;
+    /* padding-inline: 0.3em; */
 }
 
 .expert-guidance-container .guidance .guide .heading-container .text-sub-heading {
-    letter-spacing: 0.02rem;
+    border-left: 0.4rem solid var(--clr-primary);
+    padding-inline: 1em;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.04rem;
 }
 
 .expert-guidance-container .guidance .guide .heading-container button {
@@ -162,6 +221,35 @@ Expert Guidance Container
     box-shadow: 2px 2px 15px -7px var(--clr-primary);
 }
 
+@media only screen and (max-width: 768px) {
+    hr {
+        margin: 2.5rem auto;
+    }
+
+    .expert-guidance-container .guidance .guide.guide_1 {
+        flex-direction: column;
+    }
+
+    .expert-guidance-container .guidance .guide.guide_2 {
+        flex-direction: column-reverse;
+    }
+
+    .expert-guidance-container .guidance .guide.guide_3 {
+        flex-direction: column;
+    }
+
+    .expert-guidance-container .guidance .guide .heading-container,
+    .expert-guidance-container .guidance .guide .image-container {
+        width: 100%;
+        align-items: center;
+        padding-inline: 0;
+    }
+
+    .expert-guidance-container .guidance .guide .image-container img {
+        width: 100%;
+    }
+}
+
 /*=================
 Questions Container
 =================*/
@@ -183,6 +271,19 @@ Questions Container
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px) {
+    .questions-container .btn-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .questions-container .btn-container button {
+        width: 70%;
+        margin-block: 0.5rem;
+    }
+}
+
 /*=====================
 Trainers Meet Container
 =====================*/
@@ -195,4 +296,15 @@ Trainers Meet Container
 
 .trainers-meet-container .trainers {
     justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1024px) {
+    .trainers-meet-container .trainers {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .trainers-meet-container .trainers .trainer {
+        width: 35%;
+    }
 }
