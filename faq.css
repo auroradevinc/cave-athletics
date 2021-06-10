@@ -23,6 +23,7 @@ Contact Us Container
 
 .faq-container .questions-container .question-container .question .text-heading {
     color: var(--clr-primary);
+    line-height: 1.3;
 }
 
 .faq-container .questions-container .question-container .question,
@@ -52,3 +53,33 @@ Contact Us Container
     margin-block: 1rem;
     display: block;
 }
+
+@media only screen and (max-width: 1024px) {
+    .faq-container .questions-container {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .faq-container .questions-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 550px) { 
+    .faq-container .questions-container {
+        width: 100%;
+    }
+
+    .faq-container .questions-container .question-container .question .text-heading {
+        letter-spacing: normal;
+    }
+
+    .faq-container .questions-container .question-container .answer .text-sub-heading {
+        line-height: 1.7;
+    }
+
+    .faq-container .heading-container .heading {
+        font-size: 2.5rem;
+    }
+ }
