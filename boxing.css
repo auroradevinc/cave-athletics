@@ -11,12 +11,13 @@ Tag Line Container
 .tag-line-container .image-container {
     position: relative;
     width: 80%;
-    padding: 0;
+    padding-inline: 0;
     margin: 0;
     margin-inline: auto;
 }
 
 .tag-line-container .image-container img {
+    width: 100%;
     border-radius: 0.7rem;
     box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.25);
 }
@@ -25,6 +26,8 @@ Tag Line Container
     position: absolute;
     left: -14.5%;
     top: 35%;
+    margin: 0;
+    padding: 0;
 }
 
 .tag-line-container .tag-line .big-heading-1 {
@@ -44,6 +47,71 @@ Tag Line Container
 .tag-line-container .tag-line .btn-container button {
     margin-right: 1.3rem;
 }
+
+@media only screen and (max-width: 1500px) {
+    .tag-line-container .image-container .tag-line {
+        top: 30%
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tag-line-wrapping-container {
+        background: linear-gradient(101.77deg, var(--clr-bg-primary) 30%, var(--clr-primary)95.9%);
+    }
+
+    .tag-line-container .image-container .tag-line .big-heading-1 {
+        font-size: 3.9rem;
+    }
+
+    .tag-line-container .image-container .tag-line .big-heading-2 {
+        font-size: 6.3rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .tag-line-container .image-container .tag-line {
+        top: 27%
+    }
+}
+
+@media only screen and (max-width: 768px) {   
+    .tag-line-wrapping-container {
+        background: linear-gradient(101.77deg, var(--clr-bg-primary) 30%, var(--clr-primary)100.9%);
+    }
+
+    .tag-line-container .image-container {
+        width: 90%;
+    }
+
+    .tag-line-container .image-container .tag-line {
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .tag-line-container .image-container {
+        position: static;
+    }
+
+    .tag-line-container .tag-line {
+        position: static;
+        left: 0;
+        margin: 0.5rem;
+        padding: 0.5em;
+    }
+    
+    .tag-line-container .tag-line .big-heading-1 {
+        font-size: 3.7rem;
+    }
+
+    .tag-line-container .tag-line .big-heading-2 {
+        font-size: 6.1rem;
+    }
+
+    .tag-line-container .tag-line .heading {
+        font-size: 2.5rem;
+    }
+ }
 
 /*===============
 Pricing Container
@@ -91,4 +159,33 @@ Pricing Container
 .pricing-container .price-container .primary-btn {
     display: block;
     margin-inline: auto;
+}
+
+@media only screen and (max-width: 1500px) {   
+    .pricing-container .price-container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {   
+    .pricing-container .price-container {
+        width: 80%;
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 768px) {   
+    .pricing-container .price-container {
+        width: 90%;
+    }
+
+    .price-container .price-container .benefits-container ul {
+        padding-inline: 0.75em;
+    }
+}
+
+@media only screen and (max-width: 411px) {   
+    .price-container .price-container .benefits-container ul {
+        padding-inline: 0.5em;
+    }
 }

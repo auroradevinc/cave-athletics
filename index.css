@@ -91,6 +91,20 @@ Tag Line Container
     }
 }
 
+@media only screen and (max-width: 550px) { 
+    .tag-line-container .tag-line .big-heading-1 {
+        font-size: 3.7rem;
+    }
+
+    .tag-line-container .tag-line .big-heading-2 {
+        font-size: 6.1rem;
+    }
+
+    .tag-line-container .tag-line .heading {
+        font-size: 2.5rem;
+    }
+ }
+
 /*====================
 Service View Container
 ====================*/
