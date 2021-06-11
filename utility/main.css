@@ -135,6 +135,10 @@ a {
     text-decoration: none;
 }
 
+/* TODO */
+a.active-link {} 
+a.inactive-link {}
+
 hr { 
     border: 0;
     margin: 5rem auto;
@@ -195,14 +199,6 @@ hr {
 /*-------------
  Custom Classes
 -------------*/
-.show {
-    display: block!important;
-}
-
-.hide {
-    display: none!important;
-}
-
 .text-shadow {
     text-shadow: 0 3px 7px rgb(0 0 0 / 15%);
 }

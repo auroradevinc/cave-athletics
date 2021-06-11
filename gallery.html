@@ -14,39 +14,62 @@
 </head>
 <body>
     <!-- Navbar -->
-   <nav id="navbar" class="navbar-container container container-flex-row container-span-width">
-    <div class="logo-image-container">
-        <img src="./assets/images/logo/white_logo.png" alt="Cave Athletics Logo White">
-    </div>
+    <nav id="navbar" class="navbar-container container container-flex-row container-span-width">
+        <div class="logo-image-container container">
+            <img src="./assets/images/logo/white_logo.png" alt="Cave Athletics Logo White">
+        </div>
+  
+        <div class="page-links-container container container-flex-row">
+          <a href="/" class="active-link">Home</a>
+          <a href="/plans.html" class="inactive-link">Plans</a>
+          <a href="/personal-training.html" class="inactive-link">Personal Training</a>
+          <a href="/boxing.html" class="inactive-link">Boxing</a>
+          <a href="/gallery.html" class="inactive-link">Gallery</a>
+          <a href="/contact.html" class="inactive-link">Contact Us</a>
+          <a href="/faq.html" class="inactive-link">FAQs</a>
+        </div>
 
-    <div class="page-links-container container container-flex-row">
-      <a href="/" class="active-link">Home</a>
-      <a href="/plans.html" class="inactive-link">Plans</a>
-      <a href="/personal-training.html" class="inactive-link">Personal Training</a>
-      <a href="/boxing.html" class="inactive-link">Boxing</a>
-      <a href="/gallery.html" class="inactive-link">Gallery</a>
-      <a href="/contact.html" class="inactive-link">Contact Us</a>
-      <a href="/faq.html" class="inactive-link">FAQs</a>
-    </div>
+        <div class="btn-container container">
+            <button class="primary-btn">
+                <a href="./plans.html" target="_blank">Sign Up</a>
+            </button>
+        </div>
 
-    <div class="btn-container container">
-        <button class="primary-btn">
-            <a href="./plans.html" target="_blank">Sign Up</a>
-        </button>
-    </div>
+        <div id="expand-nav-btn" class="side-nav-open-btn-container container">
+            <button onclick="expand_side_nav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+        </div>
+    </nav>
 
-    <div id="expand-nav-btn" class="side-nav-open-btn-container container">
-        <button onclick="expand_side_nav()">
-            <i class="fas fa-bars fa-2x"></i>
-        </button>
-    </div>
+    <div class="sidenav-wrapping-container"></div>
+    <div id="sidenav" class="sidenav-container container-flex-column container-span-width">
+        <div class="logo-image-container container container-flex-row">
+            <img src="./assets/images/logo/black_logo.png" alt="Cave Athletics Logo White">
 
-    <div id="collapse-nav-btn" class="side-nav-close-btn-container container">
-        <button onclick="collapse_side_nav()">
-            <i class="fas fa-times fa-2x"></i>
-        </button>
+            <div id="collapse-nav-btn" class="side-nav-close-btn-container container">
+                <button onclick="collapse_side_nav()">
+                    <i class="fas fa-times fa-lg"></i>
+                </button>
+            </div>
+        </div>
+  
+        <div class="page-links-container container container-flex-column">
+          <a href="/" class="active-link sub-heading text-shadow">Home</a>
+          <a href="/plans.html" class="inactive-link sub-heading text-shadow">Plans</a>
+          <a href="/personal-training.html" class="inactive-link sub-heading text-shadow">Personal Training</a>
+          <a href="/boxing.html" class="inactive-link sub-heading text-shadow">Boxing</a>
+          <a href="/gallery.html" class="inactive-link sub-heading text-shadow">Gallery</a>
+          <a href="/contact.html" class="inactive-link sub-heading text-shadow">Contact Us</a>
+          <a href="/faq.html" class="inactive-link sub-heading text-shadow">FAQs</a>
+        </div>
+
+        <div class="btn-container container">
+            <button class="primary-btn">
+                <a href="./plans.html" target="_blank" class="text-shadow sub-heading">Sign Up Today</a>
+            </button>
+        </div>
     </div>
-</nav>
 
    <!-- Main -->
    <main>
@@ -86,6 +109,7 @@
 
    <!-- Script -->
    <Script></Script>
+   <Script src="./navbar.js"></Script>
 
 </body>
 </html>

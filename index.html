@@ -15,7 +15,7 @@
 <body>
     <!-- Navbar -->
     <nav id="navbar" class="navbar-container container container-flex-row container-span-width">
-        <div class="logo-image-container">
+        <div class="logo-image-container container">
             <img src="./assets/images/logo/white_logo.png" alt="Cave Athletics Logo White">
         </div>
   
@@ -40,13 +40,36 @@
                 <i class="fas fa-bars fa-2x"></i>
             </button>
         </div>
+    </nav>
 
-        <div id="collapse-nav-btn" class="side-nav-close-btn-container container">
-            <button onclick="collapse_side_nav()">
-                <i class="fas fa-times fa-2x"></i>
+    <div class="sidenav-wrapping-container"></div>
+    <div id="sidenav" class="sidenav-container container-flex-column container-span-width">
+        <div class="logo-image-container container container-flex-row">
+            <img src="./assets/images/logo/black_logo.png" alt="Cave Athletics Logo White">
+
+            <div id="collapse-nav-btn" class="side-nav-close-btn-container container">
+                <button onclick="collapse_side_nav()">
+                    <i class="fas fa-times fa-lg"></i>
+                </button>
+            </div>
+        </div>
+  
+        <div class="page-links-container container container-flex-column">
+          <a href="/" class="active-link sub-heading text-shadow">Home</a>
+          <a href="/plans.html" class="inactive-link sub-heading text-shadow">Plans</a>
+          <a href="/personal-training.html" class="inactive-link sub-heading text-shadow">Personal Training</a>
+          <a href="/boxing.html" class="inactive-link sub-heading text-shadow">Boxing</a>
+          <a href="/gallery.html" class="inactive-link sub-heading text-shadow">Gallery</a>
+          <a href="/contact.html" class="inactive-link sub-heading text-shadow">Contact Us</a>
+          <a href="/faq.html" class="inactive-link sub-heading text-shadow">FAQs</a>
+        </div>
+
+        <div class="btn-container container">
+            <button class="primary-btn">
+                <a href="./plans.html" target="_blank" class="text-shadow sub-heading">Sign Up Today</a>
             </button>
         </div>
-  </nav>
+    </div>
 
     <!-- Main -->
     <main>
@@ -250,45 +273,8 @@
     <footer></footer>
 
     <!-- Script -->
-    <Script>
-
-        // Side Nav Controller
-        let expand_side_nav = () => {
-
-            let navbar = document.getElementById("navbar");
-            let expand_btn = document.getElementById("expand-nav-btn");
-            let collapse_btn = document.getElementById("collapse-nav-btn");
-            
-            let main_tag = document.getElementsByTagName("main")[0];
-            let footer_tag = document.getElementsByTagName("footer")[0];
-
-            navbar.classList.add("navbar-expanded-container");
-            navbar.classList.remove("navbar-container");
-            expand_btn.classList.add("hide");
-            collapse_btn.classList.add("show");
-
-            main_tag.classList.add("hide");
-            footer_tag.classList.add("hide");
-        }
-
-        // Side Nav Controller
-        let collapse_side_nav = () => {
-
-            let navbar = document.getElementById("navbar");
-            let expand_btn = document.getElementById("expand-nav-btn");
-            let collapse_btn = document.getElementById("collapse-nav-btn");
-
-            let main_tag = document.getElementsByTagName("main")[0];
-            let footer_tag = document.getElementsByTagName("footer")[0];
-
-            navbar.classList.remove("navbar-expanded-container");
-            navbar.classList.add("navbar-container");
-            expand_btn.classList.remove("hide");
-            collapse_btn.classList.remove("show");
-
-            main_tag.classList.remove("hide");
-            footer_tag.classList.remove("hide");
-        }
-    </Script>
+    <Script></Script>
+    <Script src="./navbar.js"></Script>
+    
 </body>
 </html>
