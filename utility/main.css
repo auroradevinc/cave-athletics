@@ -135,9 +135,39 @@ a {
     text-decoration: none;
 }
 
-/* TODO */
-a.active-link {} 
-a.inactive-link {}
+a.active-link {
+    position: relative;
+    padding-bottom: 0;
+    color: var(--clr-txt-primary);
+}
+ 
+a.inactive-link {
+    position: relative;
+    padding-bottom: 0;
+    color: var(--clr-txt-secondary);
+}
+
+a.active-link::after,
+a.inactive-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 3rem;
+    background-color: var(--clr-txt-primary);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 270ms ease-in-out;
+}
+
+a.active-link:hover:after,
+a.inactive-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
 
 hr { 
     border: 0;
