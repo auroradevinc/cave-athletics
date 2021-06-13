@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./utility/main.css">
     <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
@@ -91,12 +92,14 @@
 
                         <div class="info-container container container-flex-column">
                             <p class="text-sub-heading">
-                                <i class="fas fa-phone-alt fa-lg"></i>
-                                778-438-2499
+                                <a href="tel:778-438-2499">
+                                    <i class="fas fa-phone-alt fa-lg"></i>778-438-2499
+                                </a>
                             </p>
                             <p class="text-sub-heading">
-                                <i class="fas fa-envelope fa-lg"></i>
-                                caveathleticsincbc@gmail.com
+                                <a href="mailto:caveathleticsincbc@gmail.com">
+                                    <i class="fas fa-envelope fa-lg"></i>caveathleticsincbc@gmail.com
+                                </a>
                             </p>
                             <p class="text-sub-heading">                            
                                 <a href="https://g.page/caveathleticsdelta?share" target="_blank">
@@ -153,12 +156,26 @@
         </div>
     </main>
 
-   <!-- Footer -->
-   <footer></footer>
+    <!-- Footer -->
+    <footer>
+        <div class="copyright-container container">
+            <hr>
+            <div class="logo-image-container container">
+                <img src="./assets/images/logo/white_logo.png" alt="Cave Athletics Logo White">
+            </div>
+            <p class="text-sub-heading">
+                © Cave Athletics Inc. 2020
+            </p>
+            <p class="text-sub-heading">
+                Designed & Developed by
+                <a href="https://www.auroradevelopers.com/" class="inactive-link" target="_blank">Aurora Developers</a>
+            </p>
+        </div>
+    </footer>
 
-   <!-- Script -->
-   <Script></Script>
-   <Script src="./navbar.js"></Script>
+    <!-- Script -->
+    <Script></Script>
+    <Script src="./navbar.js"></Script>
 
 </body>
 </html>
