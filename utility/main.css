@@ -4,6 +4,9 @@
 /* Roboto: Medium(500), Bold(700), Black(900) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
+/* Raleway: Regular(400), Medium(500), Semi-bold(600), Bold(700) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
 /* Open Sans: Light(300), Regular(400), Semi-Bold(600) */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
@@ -36,6 +39,12 @@ html {
     --ff-secondary-light: 300;
     --ff-secondary-regular: 400;
     --ff-secondary-semi-bold: 600;
+
+    --ff-nav: "Raleway", sans-serif;
+    --ff-nav-regular: 400;
+    --ff-nav-medium: 500;
+    --ff-nav-semi-bold: 600;
+    --ff-nav-bold: 700;
 
     color: var(--clr-txt-secondary);
 }

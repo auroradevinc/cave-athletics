@@ -20,6 +20,18 @@ Nabar Container
     width: max-content;
 }
 
+.navbar-container .page-links-container a,
+.sidenav-container .page-links-container a {
+    font-family: var(--ff-nav);
+    font-weight: var(--ff-nav-semi-bold);
+}
+
+.navbar-container .btn-container button > a,
+.sidenav-container .btn-container button > a {
+    font-family: var(--ff-nav);
+    font-weight: var(--ff-nav-bold);
+}
+
 .navbar-container .side-nav-open-btn-container,
 .navbar-container .side-nav-close-btn-container {
     display: none;
