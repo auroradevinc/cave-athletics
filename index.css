@@ -238,6 +238,10 @@ Review Container
     padding: 1.1em;
 }
 
+.review-container .review p {
+    transition: 2ms all ease-in-out;
+}
+
 .review-container .review .text-sub-heading:nth-child(1) {
     margin-top: 0;
 }

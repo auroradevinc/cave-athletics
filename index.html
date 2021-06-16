@@ -171,11 +171,11 @@
         <div class="review-container container container-parent container-span-width">
             <p class="heading text-center primary-color-text">Hear what our members have to say...</p>
 
-            <div class="review container container-parent container-center container-clr-bg-secondary">
-                <p class="text-sub-heading">
+            <div id="review" class="review container container-center container-clr-bg-secondary">
+                <p id="reviewer-text" class="text-sub-heading">
                     “Best Gym in North Delta. I have been a member here for 2 months after being a member at another large BC chain gym and let me say this place is no BS. No conctract option, clean, new equipment. The hours are amaing of course (24 hours). The place is clean, the equipment is fantastic for lifters and cardio lovers. I usually go to the gym around 8-9 am or 7-8pm and the gym is never too crowded. I wish they had a hip abduction machine though.”
                 </p>
-                <p class="text-sub-heading">— Vickie G-H</p>
+                <p id="reviewer-name" class="text-sub-heading">— Vickie G-H</p>
 
                 <div class="star-ratings">
                     <i class="fas fa-star"></i>
@@ -299,6 +299,46 @@
     <!-- Script -->
     <Script></Script>
     <Script src="./navbar.js"></Script>
-    
+    <Script>
+        let reviews = [
+            "\"I m sharing my views about this place to let you all know that this is the best place for work out . Super friendly staff n very hard-working . Love them all . I came here to get rid from depression and my trainer is amazing . She is training me very well . Thank you so much Sapna😍\"",
+            "\"I moved from Saskatchewan a year back . Joined the gym exactly one year back and I am so happy at my decision to join this. Easily approachable, very friendly and thorogh professional staff. Great ambience. The equippment is upto mark. They give personal training sessions too. Guide about diet too. I have certain physical limitations so my sessions are planned well according to these. Would recommend it highly\".\"",
+            "\"Excellent place to lift off the daily stress. It's a adequate place for lifters with moderate equipment. Highly recommended. In last 3 years, I tried other gym around here too but the Cave Athletics hygiene/standards are extreme- Kuddos to staff. Great work.\"",
+            "\"Excelente place to workout. Special ergonomic equipment, makes the difference between other usual machines. Spacious place to stretch and a very complete dumbbell set. Definitely, it is an awesome gym to do your best. The costumer service are nice gentle, respectful.\"",
+            "\"I love this location! Great workouts, exceptional and friendly staff and trainers that are great across the board. I love that they know my capabilities and push me harder when I need it.",
+            "\"Great facility with the nicest, most helpful staff. Has all the right equipment regardless of how advanced you are with your training. Since it is a 24-hr facility, I no longer need to worry about how late I can train. Also has open space to stretch and do some high intensity interval training without weights if needed. Best gym in the Surrey/Delta area, and I've trained at most of them over the past 18 yrs.\"",
+            "\"Awesome well equipped gym. It is open 24/7 and that is real convenience for people who works till late. I love working out at cave.\"",
+            "\"My experience at this has been awesome since i joined it. it's never too crowded and they have everything i need with reasonable price of membership.\"",
+            "\"Best Gym in North Delta. I have been a member here for 2 months after being a member at another large BC chain gym and let me say this place is no BS. No conctract option, clean, new equipment. The hours are amaing of course (24 hours). The place is clean, the equipment is fantastic for lifters and cardio lovers. I usually go to the gym around 8-9 am or 7-8pm and the gym is never too crowded. I wish they had a hip abduction machine though.\""
+        ]
+
+        let reviewers = [
+            "— Rajvir Phagura",
+            "— Navjit Jhand",
+            "— Navdeep Singh Chattha",
+            "— Andrés García Molina",
+            "— Josh Ingram",
+            "— Harj Dhaliwal",
+            "— Max Rayan",
+            "— Simran Kaur",
+            "— Vickie G-H"
+        ]
+
+        let review = document.getElementById("review");
+        let review_text = document.getElementById("reviewer-text");
+        let review_name = document.getElementById("reviewer-name");
+
+        setInterval(() => {
+            let index = Math.floor(Math.random() * 8) + 0;
+            review_text.innerText = reviews[index];
+            review_name.innerText = reviewers[index];
+
+            // review.animate([
+            // { transform: 'translateX(0%)' },
+            // { transform: 'translateX(100%)' }], 
+            // { duration: 300, iterations: 1 });
+        }, 5000);
+    </Script>
+
 </body>
 </html>
