@@ -312,6 +312,15 @@ Trainers Meet Container
     justify-content: space-evenly;
 }
 
+.trainers-meet-container .trainers .trainer {
+    width: 20%;
+}
+
+.trainers-meet-container .trainers .trainer  img {
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 @media only screen and (max-width: 1024px) {
     .trainers-meet-container .trainers {
         flex-wrap: wrap;
@@ -320,5 +329,17 @@ Trainers Meet Container
 
     .trainers-meet-container .trainers .trainer {
         width: 35%;
+    }
+}
+
+@media only screen and (max-width: 411px) {
+    .trainers-meet-container .trainers .trainer {
+        width: 77%;
+    }
+
+    .trainers-meet-container .trainers {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 }
