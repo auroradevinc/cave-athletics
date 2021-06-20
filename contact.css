@@ -72,8 +72,7 @@ Contact Form Container
     width: 100%;
     
     padding: 0;
-    margin: 1rem;
-    margin-block: 0.8rem;
+    margin: 0.8rem 1rem;
 }
 
 .contact-us-container .contact-container .contact-form-container .container.container-flex-row {
@@ -84,7 +83,8 @@ Contact Form Container
 .contact-us-container .contact-container .contact-form-container .form-field label.text-sub-heading {
     font-size: 1.1rem;
     display: block;
-    margin-block: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .contact-us-container .contact-container .contact-form-container .form-field input.text-sub-heading,
@@ -107,13 +107,14 @@ Contact Form Container
     resize: none;
 
     width: 100%;
-    margin-block: 0.3rem;
-    padding: 0.5em;
-    padding-inline: 1em;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding: 0.5em 1em;
 }
 
 .contact-us-container .contact-container .contact-form-container button {
-    margin-inline: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 0.3em;
     font-size: 1.1rem;
 
@@ -139,12 +140,14 @@ Contact Form Container
     }
 
     .contact-us-container .contact-container .contact-form-container {
-        padding-inline: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
 
     .contact-us-container .contact-container .contact-form-container  .container {
-        margin-inline: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -155,7 +158,8 @@ Contact Form Container
     }
 
     .contact-us-container .contact-container .info-container .text-sub-heading {
-        margin-block: 0.75rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
     }
 }
 
@@ -166,7 +170,8 @@ Contact Form Container
     }
 
     .contact-us-container .contact-container .info-container .text-sub-heading {
-        margin-block: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 

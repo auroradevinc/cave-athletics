@@ -7,8 +7,7 @@ Plan Container
 
 .plans-container .member-signup-container img {
     width: 70%;
-    margin-inline: auto;
-    margin-block: 2rem;
+    margin: 2rem auto;
     border-radius: 0.5rem;
     box-shadow: 5px 5px 25px -7px var(--clr-txt-secondary);
 }

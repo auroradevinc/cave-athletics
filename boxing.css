@@ -5,15 +5,16 @@ Tag Line Container
     background: linear-gradient(101.77deg, var(--clr-bg-primary) 37%, var(--clr-primary)90.9%);
     background-blend-mode: screen;
 
-    margin-inline: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .tag-line-container .image-container {
     position: relative;
     width: 80%;
-    padding-inline: 0;
-    margin: 0;
-    margin-inline: auto;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
 }
 
 .tag-line-container .image-container img {
@@ -39,9 +40,9 @@ Tag Line Container
 }
 
 .tag-line-container .tag-line .btn-container {
-    margin: 0;
-    margin-block: 1rem;
-    padding-inline: 0;
+    margin: 1rem 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .tag-line-container .tag-line .btn-container button {
@@ -123,7 +124,8 @@ Pricing Container
 .pricing-container .price-container {
     width: 60%;
     padding: 2em;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pricing-container .price-container .heading-container .text-heading {
@@ -146,7 +148,8 @@ Pricing Container
 
 .pricing-container .price-container .heading-container,
 .pricing-container .price-container .benefits-container {
-    margin-inline: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 0;
 }
 
@@ -158,7 +161,8 @@ Pricing Container
 
 .pricing-container .price-container .primary-btn {
     display: block;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 1500px) {   
@@ -180,12 +184,14 @@ Pricing Container
     }
 
     .price-container .price-container .benefits-container ul {
-        padding-inline: 0.75em;
+        padding-left: 0.75em;
+        padding-right: 0.75em;
     }
 }
 
 @media only screen and (max-width: 411px) {   
     .price-container .price-container .benefits-container ul {
-        padding-inline: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 }

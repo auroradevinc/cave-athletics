@@ -2,9 +2,11 @@
 Nabar Container
 ==============*/
 .navbar-container {
-    padding-block: 0;
-    margin-block: 0.5rem;
-    margin-inline: 0;
+    position: relative;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0.5rem 0;
     justify-content: space-between;
     align-items: center;
     height: auto;
@@ -32,11 +34,18 @@ Nabar Container
     font-weight: var(--ff-nav-bold);
 }
 
+.navbar-container .side-nav-open-btn-container {
+    position: absolute;
+    right: 0;
+}
+
 .navbar-container .side-nav-open-btn-container,
 .navbar-container .side-nav-close-btn-container {
     display: none;
-    margin-inline: 0;
-    padding-inline: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-container .side-nav-open-btn-container button {
@@ -56,7 +65,8 @@ Nabar Container
     }
     .navbar-container .logo-image-container {
         width: 15%;
-        margin-inline: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .navbar-container .side-nav-open-btn-container {
         display: block;
@@ -121,7 +131,8 @@ Sidenav Container
 .sidenav-container .logo-image-container {
     justify-content: space-between;
     align-items: center;
-    margin-inline: 1.55rem;
+    margin-left: 1.55rem;
+    margin-right: 1.55rem;
 }
 
 .sidenav-container .logo-image-container img {
@@ -129,8 +140,10 @@ Sidenav Container
 }
 
 .sidenav-container .side-nav-close-btn-container {
-    margin-inline: 0;
-    padding-inline: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .sidenav-container .side-nav-close-btn-container button {
@@ -150,12 +163,12 @@ Sidenav Container
 
 .sidenav-container .page-links-container a,
 .sidenav-container .page-links-container a.sub-heading {
-    margin-block: 0.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 .sidenav-container .btn-container {
-    margin-inline: 1rem;
-    margin-block: 1rem;
+    margin: 1rem;
     margin-top: 0;
 }
 

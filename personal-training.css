@@ -5,7 +5,8 @@ Tag Line Container
     background: linear-gradient(101.77deg, var(--clr-bg-primary) 37%, var(--clr-primary)90.9%);
     background-blend-mode: screen;
 
-    margin-inline: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .tag-line-container {
@@ -14,7 +15,8 @@ Tag Line Container
 }
 
 .tag-line-container .tag-line {
-    margin-block: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     width: 50%;
 }
 
@@ -23,9 +25,9 @@ Tag Line Container
 }
 
 .tag-line-container .tag-line .btn-container {
-    margin: 0;
-    margin-block: 1rem;
-    padding-inline: 0;
+    margin: 1rem 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .tag-line-container .tag-line .btn-container button {
@@ -35,8 +37,7 @@ Tag Line Container
 .tag-line-container .image-container {
     width: 50%;
     padding: 0;
-    margin: 0;
-    margin-inline: 0.3rem;
+    margin: 0 0.3rem;
 }
 
 .tag-line-container .image-container img {
@@ -62,7 +63,8 @@ Tag Line Container
     .tag-line-container .tag-line {
         /* width: 90%;
         height: 70%; */
-        margin-block: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .tag-line-container .image-container {
@@ -72,6 +74,7 @@ Tag Line Container
     .tag-line-container .tag-line .big-heading-1,
     .tag-line-container .tag-line .big-heading-2 {
         width: fit-content;
+        width: -moz-fit-content;
         display: inline-block;
     }
 
@@ -115,8 +118,7 @@ Motto Container
 .motto-wrapping-container {
     background: linear-gradient(0deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
     
-    margin-inline: 0;
-    margin-block: 0;
+    margin: 0;
 }
 
 .motto-container .heading-container .sub-heading {
@@ -125,7 +127,8 @@ Motto Container
 
 .motto-container .motto {
     width: 70%;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1.1em;
 }
 
@@ -141,8 +144,7 @@ Expert Guidance Container
 .expert-guidance-wrapping-container {
     background: linear-gradient(180deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
     
-    margin-inline: 0;
-    margin-block: 0;
+    margin: 0;
 }
 
 .expert-guidance-container {
@@ -156,7 +158,8 @@ Expert Guidance Container
 .expert-guidance-container .main-image-container {
     position: relative;
     width: 90%;
-    margin-inline: auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
 }
 
@@ -181,11 +184,13 @@ Expert Guidance Container
 
 .expert-guidance-container .main-image-container .heading-container .heading {
     border-left: 5px solid var(--clr-primary);
-    padding-inline: 0.3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
 }
 
 .expert-guidance-container .main-image-container .heading-container .sub-heading {
-    padding-inline: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .expert-guidance-container .guidance .guide {
@@ -202,13 +207,10 @@ Expert Guidance Container
     padding: 1.5em;
 }
 
-.expert-guidance-container .guidance .guide .heading-container .text-heading {
-    /* padding-inline: 0.3em; */
-}
-
 .expert-guidance-container .guidance .guide .heading-container .text-sub-heading {
     border-left: 0.4rem solid var(--clr-primary);
-    padding-inline: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
     margin-bottom: 1.5rem;
     letter-spacing: 0.04rem;
 }
@@ -256,7 +258,8 @@ Expert Guidance Container
     .expert-guidance-container .guidance .guide .image-container {
         width: 100%;
         align-items: center;
-        padding-inline: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .expert-guidance-container .guidance .guide .image-container img {
@@ -270,13 +273,13 @@ Questions Container
 .questions-wrapping-container {
     background: linear-gradient(0deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
     
-    margin-inline: 0;
-    margin-block: 0;
+    margin: 0;
 }
 
 .questions-container {
     margin-top: 0;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .questions-container .btn-container button {
@@ -294,7 +297,8 @@ Questions Container
 
     .questions-container .btn-container button {
         width: 70%;
-        margin-block: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -304,8 +308,7 @@ Trainers Meet Container
 .trainers-meet-wrapping-container {
     background: linear-gradient(180deg, var(--clr-primary) -48.05%, var(--clr-bg-primary) 24.33%);
     
-    margin-inline: 0;
-    margin-block: 0;
+    margin: 0;
 }
 
 .trainers-meet-container .trainers {

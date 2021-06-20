@@ -3,16 +3,19 @@ Copy Right Container
 ==================*/
 .copyright-container {
     width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
 }
 
 .copyright-container hr {
-    margin-block: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .copyright-container .logo-image-container,
 .copyright-container p {
     width: fit-content;
+    width: -moz-fit-content;
     margin: auto;
 }
 
@@ -23,7 +26,8 @@ Copy Right Container
 }
 
 .copyright-container p a{
-    margin-inline: 0;
+    margin-left: 0;
+    margin-right: 0;
     text-decoration: underline;
 }
 

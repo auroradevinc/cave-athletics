@@ -13,8 +13,7 @@ Gallery Container
     background: 
         linear-gradient(270deg, var(--clr-primary) -30%, var(--clr-bg-primary), var(--clr-primary) 130%);
 
-    margin-inline: 0;
-    margin-block: 0;
+    margin: 0;
 }
 
 .gallery-container .heading-container .sub-heading{
@@ -29,7 +28,6 @@ Gallery Container
 .gallery-container .gallery-photos img {
     display: block;
     object-fit: cover;
-    height: 100%;
     width: 100%;
     
     border-radius: 0.5rem;

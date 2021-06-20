@@ -5,7 +5,8 @@ Tag Line Container
     background: linear-gradient(101.77deg, var(--clr-bg-primary) 37%, var(--clr-primary)90.9%);
     background-blend-mode: screen;
 
-    margin-inline: 0;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .tag-line-container {
@@ -14,14 +15,15 @@ Tag Line Container
 }
 
 .tag-line-container .tag-line {
-    margin-block: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     width: 50%;
 }
 
 .tag-line-container .tag-line .btn-container {
-    margin: 0;
-    margin-block: 1rem;
-    padding-inline: 0;
+    margin: 1rem 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .tag-line-container .tag-line .btn-container button {
@@ -31,8 +33,7 @@ Tag Line Container
 .tag-line-container .image-container {
     width: 50%;
     padding: 0;
-    margin: 0;
-    margin-inline: 0.3rem;
+    margin: 0 0.3rem;
 }
 
 .tag-line-container .image-container img {
@@ -58,7 +59,8 @@ Tag Line Container
     .tag-line-container .tag-line {
         /* width: 90%;
         height: 70%; */
-        margin-block: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .tag-line-container .image-container {
@@ -68,6 +70,7 @@ Tag Line Container
     .tag-line-container .tag-line .big-heading-1,
     .tag-line-container .tag-line .big-heading-2 {
         width: fit-content;
+        width: -moz-fit-content;
         display: inline-block;
     }
 
@@ -114,7 +117,8 @@ Service View Container
 
 .service-view-container .routine-container {
     justify-content: space-between;
-    margin-block: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .service-view-container .routine-container .routine img {
@@ -126,7 +130,8 @@ Service View Container
 
 .service-view-container .routine-container .routine .text-sub-heading {
     height: max-content;
-    margin-block: 0.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 /* Large devices (tablets, small laptops, 1024px and below) */
@@ -152,7 +157,8 @@ Results Promise Container
 =======================*/
 .results-promise-wrapping-container {
     background-color: var(--clr-bg-secondary);
-    margin-inline: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .results-promise-container .heading-container .sub-heading {
@@ -183,8 +189,8 @@ Results Promise Container
     display: block;
     margin: auto;
 
-    margin-block: 2rem;
     margin-top: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -227,13 +233,13 @@ Results Promise Container
 Review Container
 ==============*/
 .review-container .heading {
-    margin-block: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .review-container .review {
     width: 70%;
-    margin-inline: auto;
-    margin-block: 3rem;
+    margin: 3rem auto;
     
     padding: 1.1em;
 }
@@ -246,17 +252,60 @@ Review Container
     margin-top: 0;
 }
 
+.review-container .review #reviewer-text.text-sub-heading {
+    padding: 1em 0;
+
+    /* Only Shows 3 lines of review text */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 10ch;
+}
+
 .review-container .review .star-ratings .fas.fa-star {
     color: gold;
 }
 
 .review-container .review .text-sub-heading.ratings-source {
-    margin-block: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.review-container .review .text-sub-heading.ratings-source a {
+    text-decoration: underline;
+    margin: 0;
+    color: var(--clr-txt-secondary);
+}
+
+.review-container .bootstrap .carousel-indicators {
+    bottom: -15px;
+}
+
+.review-container .bootstrap .carousel-control-prev,
+.review-container .bootstrap .carousel-control-next {
+    height: 100%;
+    box-shadow: none;
 }
 
 @media only screen and (max-width: 768px) {
     .review-container .review {
         width: 90%;
+    }
+
+    .review-container .bootstrap .carousel-control-prev,
+    .review-container .bootstrap .carousel-control-next {
+        width: 7%;
+    }
+}
+
+@media only screen and (max-width: 658px) {
+    .review-container .bootstrap .carousel-control-prev {
+        left: -15px;
+    }
+
+    .review-container .bootstrap .carousel-control-next {
+        right: -15px;
     }
 }
 
@@ -265,11 +314,13 @@ Awards Recognition Container
 ==========================*/
 .awards-recognition-wrapping-container {
     background-color: var(--clr-bg-secondary);
-    margin-block: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .awards-recognition-container .heading {
-    margin-block: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .awards-recognition-container .awards-container {
@@ -293,8 +344,7 @@ Awards Recognition Container
 }
 
 .awards-recognition-container .awards-container .award .award-description .text-sub-heading {
-    margin: 0;
-    margin-inline: 1.25rem;
+    margin: 0 1.25rem;
 }
 
 .awards-recognition-container .awards-container .award .award-description .star-ratings {
@@ -304,8 +354,7 @@ Awards Recognition Container
 .awards-recognition-container .awards-container .award .award-description .star-ratings .text-sub-heading {
     display: inline-block;
     width: 4rem;
-    margin: 0;
-    margin-inline: 1.25rem;
+    margin: 0 1.25rem;
 }
 
 .awards-recognition-container .awards-container .award .award-description .star-ratings .fas.fa-star {
@@ -329,7 +378,8 @@ Awards Recognition Container
 
     .awards-recognition-container .awards-container .award {
         width: 100%;
-        padding-block: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .awards-recognition-container .awards-container .award:nth-child(1) {
@@ -342,7 +392,8 @@ Awards Recognition Container
         height: 20%;
 
         display: block;
-        margin-block: auto;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .awards-recognition-container .awards-container .award .award-description .star-ratings .text-sub-heading {
@@ -364,8 +415,7 @@ Awards Recognition Container
     }
 
     .awards-recognition-container .awards-container .award img{
-        margin-inline: auto;
-        margin-block: 1rem;
+        margin: 1rem auto;
 
         width: 150px;
         height: 150px;
@@ -388,9 +438,11 @@ Sign Up Container
 ===============*/
 .sign-up-wrapping-container {
     background-color: var(--clr-primary);
-    margin-block: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
-    padding-block: 5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .sign-up-container .sign-up-text .big-heading-1 {
@@ -406,7 +458,8 @@ Sign Up Container
 
 .sign-up-container .secondary-btn {
     display: block;
-    margin-block: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 
     padding: 1em;
     font-size: 1.3rem;
@@ -421,9 +474,11 @@ Sign Up Container
     .sign-up-container .sign-up-text .big-heading-1,
     .sign-up-container .sign-up-text .heading {
         width: fit-content;
+        width: -moz-fit-content;
         text-align: center;
         margin-top: 1.5rem;
-        margin-inline: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sign-up-container .sign-up-text .big-heading-1 {
@@ -446,7 +501,8 @@ Sign Up Container
 Safety Container
 ==============*/
 .safety-container .heading {
-    margin-block: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .safety-container .safety-measures {
@@ -456,12 +512,14 @@ Safety Container
 
 @media only screen and (max-width: 768px) {
     .safety-container .safety-measures ul {
-        padding-inline: 2em;
+        padding-right: 2em;
+        padding-left: 2em;
     }
 }
 
 @media only screen and (max-width: 411px) {
     .safety-container .safety-measures ul {
-        padding-inline: 1em;
+        padding-right: 1em;
+        padding-left: 1em;
     }
 }
