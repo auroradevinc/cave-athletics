@@ -19,3 +19,8 @@ let collapse_side_nav = () => {
     sidenav.style.width = "0%";
     sidenav.style.transition = "all 0.5s";
 }
+
+// Redirect Image Click to home page
+let redirectHomePage = () => {
+    window.open("/", "_self");
+}
