@@ -94,6 +94,18 @@ button:hover {
 	border-color: #eea236!important;
 }
 
+.submit-button a:nth-child(1) {
+	color: #E9E3E7!important;
+    background-color: #3E3A3A!important;
+    border: 2px solid #3E3A3A!important;
+}
+
+.submit-button a:nth-child(2) {
+	color: #E9E3E7!important;
+    background-color: #D91616!important;
+	border: 2px solid #D91616!important;
+}
+
 h1.page-title {
 	font-size: 3rem!important;
 	font-weight: bold!important;
@@ -142,6 +154,8 @@ form .panel.panel-default {
 
 }
 
+.signup-membership-details,
+form #member-form .panel.panel-default,
 .price-summary .charge-details {
 	margin-top: 5rem!important;
 	border-radius: 0.7rem!important;
@@ -150,6 +164,13 @@ form .panel.panel-default {
 	color: #E9E3E7!important;
 }
 
+form #member-form .panel.panel-default label {
+	color: #E9E3E7!important;
+}
+
+form #member-form .panel.panel-default input {
+	background-color: #E9E3E7!important;
+}
 
 
 
