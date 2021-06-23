@@ -73,6 +73,17 @@ Tag Line Container
     .tag-line-container .image-container .tag-line {
         top: 27%
     }
+
+    .tag-line-container .image-container {
+        position: static;
+    }
+
+    .tag-line-container .tag-line {
+        position: static;
+        left: 0;
+        margin: 0.5rem;
+        padding: 0.5em;
+    }
 }
 
 @media only screen and (max-width: 768px) {   
@@ -90,17 +101,6 @@ Tag Line Container
 }
 
 @media only screen and (max-width: 550px) {
-    .tag-line-container .image-container {
-        position: static;
-    }
-
-    .tag-line-container .tag-line {
-        position: static;
-        left: 0;
-        margin: 0.5rem;
-        padding: 0.5em;
-    }
-    
     .tag-line-container .tag-line .big-heading-1 {
         font-size: 3.7rem;
     }
