@@ -159,6 +159,11 @@ Pricing Container
     margin: 0;
 }
 
+.pricing-container .price-container .benefits-container ul li.text-sub-heading a {
+    margin: 0;
+    text-decoration: underline;
+}
+
 .pricing-container .price-container .primary-btn {
     display: block;
     margin-left: auto;
