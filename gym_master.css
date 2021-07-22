@@ -32,6 +32,10 @@ button a {
     padding: 0!important;
 }
 
+a.cancel-signup-btn {
+	display: none !important;
+}
+
 button:hover {
     box-shadow: 0 5px 11px rgb(0 0 0 / 30%)!important;
 }
