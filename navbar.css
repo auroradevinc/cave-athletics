@@ -86,7 +86,10 @@ Nabar Container
         margin-right: auto;
     }
     .navbar-container .side-nav-open-btn-container {
-        display: block;
+        /* display: block; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .navbar-container .btn-container {
         display: none;
