@@ -5,6 +5,12 @@ nav #expand-nav-btn button {
     border: 2px solid var(--clr-bg-primary) !important;
 }
 
+.ec-minicart.ec-minicart--m {
+    padding: 5px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
 #sidenav {
     z-index: 2 !important;
 }
