@@ -141,13 +141,8 @@ input, select {
     background: #3E3A3A!important;
 }
 
-::placeholder {
-	opacity: 0.3!important;
-}
-
 form .form-group input::-webkit-input-placeholder, 
-form .form-group input::-moz-placeholder,
-form .form-group input::placeholder {
+form .form-group input::-moz-placeholder {
 	opacity: 0.3!important;
 }
 
